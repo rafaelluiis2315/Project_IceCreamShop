@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sabores.css' %}">
+    <title>Sabores</title>
+</head>
+<body>  
+    <div class="Sabores">
+        <!-- header -->
+        <header>
+            <div class="limitar-secao container-header">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" />
+    
+                <nav>
+                    <a class='header-botao-nav' href='#' >Home</a>
+                    <a class='header-botao-nav' href='#' >Sabores</a>
+                    <a class='header-botao-nav' href='#' >Sobre</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+
+            <section class="secao-banner-nossos-sabores">
+                <h1>NOSSOS SABORES</h1>
+            </section>
+
+            <section class="secao-pagina-sabores">
+
+                <h1>SABORES DE SORVETE</h1>
+                
+                <div class="secao-cards-sabores">
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sabor-oreo.png' %}" alt="sorvete-de-oreo" />
+
+                        <h3 class="card-sabores-titulo">Sorvete de Oreo</h3>
+
+                        <p>Delicioso sorvete sabor Oreo. Uma explosão de sabor!</p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sabor-pistache.png' %}" alt="sorvete-pistache" />
+
+                        <h3>Sorvete Pistache</h3>
+
+                        <p>Cremoso sorvete sabor pistache com pedacinhos de semente.</p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sabor-cookies-avela.png' %}" alt="sorvete-de-cookies-e-avelã" />
+
+                        <h3>Sorvete Cookies & Avelã</h3>
+
+                        <p>O nosso melhor sorvete. Você vai adorar o sabor.</p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sorbet-kiwi.png' %}" alt="sorvete-de-kiwi" />
+
+                        <h3>Sorvete de Kiwi</h3>
+
+                        <p>Delicioso e refrescante sorvete sabor kiwi. Rico em vitamina C.</p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sorbet-morango.png' %}" alt="sorvete-de-morango" />
+
+                        <h3>Sorvete de Morango</h3>
+
+                        <p>Sorvete de morango gourmet. Tradicional e saboroso.</p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card-sabores card-hover">
+                        <img src="{% static 'img/sorbet-limao.png' %}" alt="sorvete-de-limão-siciliano" />
+
+                        <h3>Sorvete de Limão Siciliano</h3>
+
+                        <p>O incrível sorvete gourmet de limão siciliano vai te encantar.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer>
+
+            <div class='limitar-secao container-footer'>
+    
+                <img src="{% static 'img/logo.png' %}" alt='logo'/>
+    
+                <div class='footer-box'>
+                    <h3>ENDEREÇO</h3>
+                    <p>Av. Bernadino de Campos, 98</p>
+                    <p>São Paulo, SP 12345-678</p>
+                </div>
+    
+                <div class='footer-box'>
+                    <h3>CONTATO</h3>
+                    <p>info@meusite.com</p>
+                    <p>Tel: (11) 3456-7890</p>
+                </div>
+    
+                <div class='footer-box'>
+                    <h3>HORÁRIOS</h3>
+                    <p>ABERTO TODOS OS DIAS</p>
+                    <p>10:00 - 22:00</p>
+                </div>
+    
+            </div>
+    
+            <div class='footer-creditos-dev'>
+                <p>Gelateria. Orgulhosamente desenvolvido por Iuri Torres</p>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>
