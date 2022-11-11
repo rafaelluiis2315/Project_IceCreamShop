@@ -108,7 +108,7 @@ STATIC_URL = 'static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-   'mysite/sorveteria/static/',
+   'gelateria/sorveteria/static',
 )
 
 # Default primary key field type
