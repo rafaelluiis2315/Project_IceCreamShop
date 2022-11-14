@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="{% static 'css/sabores.css' %}">
-    <title>Sabores</title>
+    <title>{{sabor.nomes_sabor}}</title>
 </head>
 <body>  
     <div class="Sabores">
@@ -19,9 +19,9 @@
                 </a>
     
                 <nav>
-                    <a class='header-botao-nav' href='/' >Home</a>
-                    <a class='header-botao-nav' href='#sabores' >Sabores</a>
-                    <a class='header-botao-nav' href='#sobre' >Sobre</a>
+                    <a class='header-botao-nav' href='#' >Home</a>
+                    <a class='header-botao-nav' href='#' >Sabores</a>
+                    <a class='header-botao-nav' href='#' >Sobre</a>
                 </nav>
             </div>
         </header>
@@ -29,40 +29,21 @@
         <!-- main -->
         <main>
 
-            <section class="secao-banner-nossos-sabores">
-                <h1>NOSSOS SABORES</h1>
-            </section>
+            <section class="secao-pagina-sabores">
 
-            <section id="sabores" class="secao-pagina-sabores">
-
-                <h1>SABORES DE SORVETE</h1>
                 
                 <div class="secao-cards-sabores">
-                    {%for sabor in page.object_list %}
-                        <!-- CARD -->
-                        <a href="/{{sabor.id}}/" class="card-sabores card-hover">
-                            
-                            <img src="{% static 'img/' %}{{sabor.fotos_sabor}}" alt="Imagem do {{sabor.nomes_sabor}}" />
 
-                            <h3 class="card-sabores-titulo">{{sabor.nomes_sabor}}</h3>
+                    <!-- CARD -->
+                    <div href="/{{sabor.id}}/" class="card-sabores card-hover">
+                        
+                        <img src="{% static 'img/' %}{{sabor.fotos_sabor}}" alt="Imagem do {{sabor.nomes_sabor}}" />
 
-                            <p>{{sabor.descricao_sabor}}</p>
-                        </a>
+                        <h3 class="card-sabores-titulo">{{sabor.nomes_sabor}}</h3>
 
-                    {% endfor%}
+                        <p>{{sabor.descricao_sabor}}</p>
+                    </div>
 
-                </div>
-                
-                <div>
-                    
-                    {% if page.has_previous %}
-                        <a href="{% url 'index' %}?page={{page.previous_page_number}}">Anterior</a>
-                    {% endif %}
-
-                    {% if page.has_next %}
-                        <a href="{% url 'index' %}?page={{page.next_page_number}}">Próximo</a>
-                    {% endif %}
-                    
                 </div>
 
             </section>
@@ -72,7 +53,7 @@
         <!-- footer -->
         <footer>
 
-            <div id="sobre" class='limitar-secao container-footer'>
+            <div class='limitar-secao container-footer'>
     
                 <img src="{% static 'img/logo.png' %}" alt='logo'/>
     
