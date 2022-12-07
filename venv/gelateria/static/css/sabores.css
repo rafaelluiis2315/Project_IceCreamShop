@@ -13,6 +13,7 @@
 
 .card-hover:hover {
     background-color: rgb(237, 237, 237);
+    color: black;
     cursor: pointer;
 }
 
@@ -51,6 +52,8 @@
 }
 
 .card-sabores {
+    text-decoration: none;
+    color: black;
     width: calc( (100% / 3) - 150px );
     height: 380px;
     margin: 15px 30px;
